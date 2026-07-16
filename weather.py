@@ -1,5 +1,5 @@
 import requests
-from config import WEATHER_API_KEY
+from config import OPENWEATHER_API_KEY
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
@@ -13,7 +13,7 @@ def execute(arguments: dict):
     try:
         params = {
             "q": city,
-            "appid": WEATHER_API_KEY,
+            "appid": OPENWEATHER_API_KEY,
             "units": "metric"
         }
 
