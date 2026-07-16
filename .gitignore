@@ -10,3 +10,5 @@ __pycache__/
 
 # Memory File
 data/memory.json
+
+data/contacts.json
