@@ -1,5 +1,5 @@
 import requests
-from config import STOCK_API_KEY
+from config import FINNHUB_API_KEY
 
 BASE_URL = "https://finnhub.io/api/v1/quote"
 
@@ -17,7 +17,7 @@ def execute(arguments: dict):
             BASE_URL,
             params={
                 "symbol": symbol.upper(),
-                "token": STOCK_API_KEY
+                "token": FINNHUB_API_KEY
             },
             timeout=10
         )
